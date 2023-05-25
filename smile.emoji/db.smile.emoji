@@ -1,0 +1,14 @@
+$ORIGIN smile.emoji.
+$TTL 86400
+
+@       IN  SOA ns1 arc.smile.emoji. (
+            2023052502 1h 15m 30d 1h)
+        
+        IN  NS  ns1
+        IN  A   10.0.1.53    
+ns1     IN  A   10.0.1.53
+
+normal  IN  TXT ":smile:"
+cat     IN  TXT ":smile_cat:"
+slight  IN  TXT ":slight_smile:"
+sweat   IN  TXT ":sweat_smile:"

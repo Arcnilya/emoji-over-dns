@@ -1,0 +1,11 @@
+$ORIGIN emoji.
+$TTL 86400
+@       IN  SOA ns1 arc.emoji. (
+            2023052502 1h 15m 30d 1h)
+        
+        IN  NS  ns1.emoji.
+ns1     IN  A   10.0.0.53
+
+smile        IN  NS  ns1.smile
+ns1.smile    IN  A   10.0.1.53
+

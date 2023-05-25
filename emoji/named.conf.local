@@ -1,0 +1,4 @@
+zone "emoji" {
+    type master;
+    file "/etc/bind/zones/db.emoji";
+};
