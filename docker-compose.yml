@@ -1,12 +1,12 @@
 version: "3"
 services:
     tld:
-        image: emoji-ns
+        build: emoji/.
         networks:
             emojinet:
                 ipv4_address: 10.0.0.53
     sld:
-        image: smile.emoji-ns
+        build: smile.emoji/.
         networks:
             emojinet:
                 ipv4_address: 10.0.1.53

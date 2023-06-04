@@ -13,14 +13,8 @@ cat.smile.emoji. -> ":smile_cat:"
 This repo consists of a "emoji" TLD name server and a "smile" SLD name server.
 Their folders contains a zone file, a named.conf.local file and a Dockerfile.
 
-## How to setup
-Make sure that you have docker/-compose
-```sh
-sudo docker build -t emoji-ns emoji/
-sudo docker build -t smile.emoji-ns smile.emoji/
-```
-
 ## How to run
+Make sure that you have docker/-compose
 ```sh
 sudo docker compose up -d
 ```
@@ -33,7 +27,7 @@ dig @10.0.0.53 cat.smile.emoji TXT
 
 Get all available smileys using zone transfer
 ```sh
-dig @10.0.0.53 smile.emoji AXFR
+dig @10.0.1.53 smile.emoji AXFR | grep TXT
 ```
 
 ## How to turn off
