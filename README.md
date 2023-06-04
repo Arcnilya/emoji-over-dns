@@ -4,10 +4,10 @@ This is a lab using docker compose to experiment with DNS and emoji short-code m
 
 Emojis are structured in a hierarchy which maps very well onto DNS:
 ```
-normal.smile.emoji. -> ":smile:"
-slight.smile.emoji. -> ":slight_smile:"
-sweat.smile.emoji. -> ":sweat_smile:"
-cat.smile.emoji. -> ":smile_cat:"
+normal.smile.emoji. -> ":smile:" 😄
+slight.smile.emoji. -> ":slight_smile:" 🙂
+sweat.smile.emoji. -> ":sweat_smile:" 😅
+cat.smile.emoji. -> ":smile_cat:" 😸
 ```
 
 This repo consists of a "emoji" TLD name server and a "smile" SLD name server.
